@@ -1,0 +1,6 @@
+print("Hola, mucho gusto")
+nombre = input("Como te llamas? ")
+edad = int(input("Cuantos años tienes? "))
+print(nombre,edad)
+precio = float(input("Cuantos cuesta esa computadora?: "))
+print("La computadora cuesta: ",precio)
