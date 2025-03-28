@@ -14,7 +14,7 @@ def menu():
 
 def consult_saldo(saldo):
     print(f"\nTu saldo actual es de: ${saldo:.2f}")
-
+    
 
 def depo_money():
     global saldo 
