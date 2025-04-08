@@ -4,27 +4,8 @@ Los estudiantes deberan crear al menos dos modulos que contengan implementacione
 Posteriormente, desde un script principal, se utilizaran estas funciones para localizar elementos especificos en una coleccion de datos, 
 resaltando la importancia de la organizacion en proyectos de mayor envergadura.'''
 
-
-#hace una busqueda lineal para encontrar un elemento de la lista, si lo encuenta retornara el indice del elemento, si no hay un elemento en la lista, retornara -1
-def busqueda_lineal(lista, elemento):
-    for i in range(len(lista)):
-        if lista[i] == elemento:
-            return i
-    return -1
-
-def busqueda_binaria(lista, elemento):
-    i = 0
-    final = len(lista) - 1
-
-    while i <= final:
-        mid = (i + final) // 2  # // Se utiliza para realizar una division y redondear al resultado mas cercano
-        if lista[mid] == elemento:
-            return mid
-        elif lista[mid] < elemento:
-            i = mid + 1
-        else: 
-            final = mid - 1
-    return -1 #Retorna -1 si el elemento en la lista no se encuentra
+from busqueda.busquedabinaria import busqueda_binaria
+from busqueda.busquedalineal import busqueda_lineal
 
 if __name__ == "__main__":
     datos = [10,20,5,7,15,35,2]
