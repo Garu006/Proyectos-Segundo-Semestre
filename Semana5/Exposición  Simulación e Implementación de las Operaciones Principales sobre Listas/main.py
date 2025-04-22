@@ -25,9 +25,9 @@ def menu():
             carnet = input("Carnet: ")
             nombres = input("Nombres: ")
             apellidos = input("Apellidos: ")
-            peso = input("Peso: ")
+            peso = input("Peso(Kg): ")
             estatura = input("Estatura: ")
-            sexo = input("Sexp: ")
+            sexo = input("Sexo(M/F): ")
             promedio = input("Promedio: ")
             estudiante = Estudiante(carnet, nombres, apellidos, peso, estatura, sexo, promedio)
             lista.insertar(estudiante) #Agregar a la lista
