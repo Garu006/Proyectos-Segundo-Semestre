@@ -1,7 +1,8 @@
 '''Una tienda con productos, carrito y funcionalidad para calcular el total'''
 
-from tienda.carrito import Carrito
-from tienda.tienda import Tienda
+from producto import Producto
+from carrito import Carrito
+from tienda import Tienda
 
 def main():
     tienda = Tienda()
@@ -17,7 +18,7 @@ def main():
         opcion = input("Seleccione una opcion: ")
 
         if opcion == "1":
-            tienda.mostrar_catalogo()
+            tienda.mostrar_catalogo()                          
         elif opcion == "2":
             indice = int(input("Ingrese el indice del producto: "))
             producto = tienda.obtener_producto(indice)

@@ -11,6 +11,7 @@ class Carrito:
         return sum(p.precio for p in self.productos)
 
     def mostrar_carrito(self):
-        if not self.productos:
-            print("El carrito esta vacio")
-        return '\n',join(str(p) for p in self.productos)
+        if self.productos:
+            return "\n".join(str(p) for p in self.productos)
+        else:
+            return print("El carrito esta vacio")
